@@ -1,0 +1,114 @@
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainmenu"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFFFFF"
+    android:fitsSystemWindows="true"
+>
+    <android.support.v4.widget.DrawerLayout
+
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/DrawerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:elevation="7dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:id="@+id/parent"
+            android:layout_height="match_parent">
+            <android.support.v7.widget.Toolbar
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/tool_bar"
+                app:title=":D"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?attr/colorPrimary"
+                android:elevation="5dp"
+                android:minHeight="?attr/actionBarSize"
+                app:contentInsetLeft="72dp"
+                app:contentInsetStart="72dp"
+
+
+                 >
+
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:background="?attr/colorPrimary"
+                    android:src="@drawable/ic_cart"
+                    android:onClick="handleUpdate"
+                    android:id="@+id/cartButton"
+                    android:layout_gravity="end"
+                    android:layout_marginRight="5dp"
+                    />
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/ic_post"
+                    android:onClick="handleUpdate4"
+
+                    android:id="@+id/post"
+                    android:layout_gravity="end"
+                    android:layout_marginRight="5dp"
+                    />
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/ic_search"
+                    android:onClick="handleUpdate3"
+                    android:id="@+id/searchButton"
+                    android:layout_gravity="end"
+                    android:layout_marginRight="5dp"
+                    />
+
+
+            </android.support.v7.widget.Toolbar>
+
+            <LinearLayout
+                android:id="@+id/container"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_below="@+id/tool_bar"
+                android:orientation="vertical">
+
+
+            </LinearLayout>
+
+
+
+            <android.support.v7.widget.Toolbar
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/tool_bar2"
+                app:title=":D"
+                android:layout_width="match_parent"
+                android:layout_height="?android:attr/actionBarSize"
+                android:background="@drawable/dim"
+                android:minHeight="?attr/actionBarSize"
+                android:layout_alignParentBottom="true"
+                android:visibility="invisible"
+                android:onClick="handleUpdate5"
+                android:gravity="center"
+                >
+            </android.support.v7.widget.Toolbar>
+        </RelativeLayout>
+
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/RecyclerView"
+            android:layout_width="280dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:background="#ffffff"
+            android:scrollbars="vertical">
+
+
+        </android.support.v7.widget.RecyclerView>
+
+    </android.support.v4.widget.DrawerLayout>
+
+</FrameLayout>

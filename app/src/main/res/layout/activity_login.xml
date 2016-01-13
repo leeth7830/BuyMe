@@ -1,0 +1,83 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/textUser"
+        android:text="Username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="23dp"
+        android:layout_marginTop="20dp"
+       />
+
+    <EditText
+        android:id="@+id/etUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignLeft="@+id/textUser"
+        android:layout_below="@+id/textUser"
+        android:layout_marginLeft="21dp"
+        android:layout_marginTop="14dp"
+        android:hint="Enter Name"
+        android:ems="10">
+
+         <requestFocus />
+    </EditText>
+    <TextView
+        android:id="@+id/textPass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textUser"
+        android:layout_below="@+id/etUsername"
+        android:text="password:" />
+
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textPass"
+        android:layout_below="@+id/textPass"
+        android:layout_marginLeft="21dp"
+        android:layout_marginTop="14dp"
+        android:ems="10"
+        android:hint="Enter Password"
+        android:inputType="textPassword" >
+        <requestFocus />
+    </EditText>
+    <CheckBox
+        android:id="@+id/cbShowPwd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/etPassword"
+        android:layout_below="@+id/etPassword"
+        android:text="Show Password" />
+
+
+    <Button
+        android:id="@+id/bLogin"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="10dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/cbShowPwd"
+        android:layout_below="@+id/cbShowPwd"
+        android:text="Login" />
+
+    <TextView
+        android:id="@+id/tvRegisterLink"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/bLogin"
+        android:layout_below="@+id/bLogin"
+        android:layout_gravity="center_horizontal"
+        android:text="Register Here"
+        android:textStyle="bold" />
+
+
+
+</RelativeLayout>

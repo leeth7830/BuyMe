@@ -1,0 +1,41 @@
+
+<resources>
+
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowCloseOnTouchOutside">true</item>
+        <item name="colorPrimary">#FFEBEE</item>
+        <item name="colorPrimaryDark">#212121</item>
+        <item name="android:textColorPrimary">#000000</item>
+        <item name="colorAccent">#CEF6F5</item>
+        <item name="android:textColorPrimaryInverse">#CEF6F5</item>
+        <!--<item name="android:actionBarStyle">@style/ActionBarStyle</item>-->
+
+    </style>
+    <style name="ActionBarPopupThemeOverlay" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowCloseOnTouchOutside">true</item>
+        <item name="colorPrimary">#FFEBEE</item>
+        <item name="colorPrimaryDark">#212121</item>
+        <item name="android:textColorPrimary">#000000</item>
+        <item name="colorAccent">#CEF6F5</item>
+        <item name="android:textColorPrimaryInverse">#CEF6F5</item>
+        <!--<item name="android:actionBarStyle">@style/ActionBarStyle</item>-->
+
+    </style>
+    <style name="ActionBarThemeOverlay" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowCloseOnTouchOutside">true</item>
+        <item name="colorPrimary">#FFEBEE</item>
+        <item name="colorPrimaryDark">#212121</item>
+        <item name="android:textColorPrimary">#000000</item>
+        <item name="colorAccent">#CEF6F5</item>
+        <item name="android:textColorPrimaryInverse">#CEF6F5</item>
+        <!--<item name="android:actionBarStyle">@style/ActionBarStyle</item>-->
+
+    </style>
+
+</resources>
+
+

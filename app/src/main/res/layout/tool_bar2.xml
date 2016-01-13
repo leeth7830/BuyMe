@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/toolbar"
+    contentInsetLeft="72dp"
+    contentInsetStart="72dp"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:background="?attr/colorPrimary"
+    android:elevation="5dp"
+    android:minHeight="?attr/actionBarSize"
+    android:paddingRight="15dp"
+    >
+
+
+
+
+        <SearchView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:inputType="none"
+            android:background="#CFD8DC"
+            android:onClick="handleUpdate2"
+            android:id="@+id/searchView"
+            android:layout_weight="1"
+            app:elevation="5dp"
+            android:layout_marginBottom="5dp"
+            />
+
+
+
+
+
+
+</android.support.v7.widget.Toolbar>

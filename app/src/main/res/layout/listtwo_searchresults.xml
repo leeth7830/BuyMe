@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:orientation="horizontal"
+    android:layout_height="wrap_content">
+    
+    
+    <ImageView
+        android:id="@+id/product_image"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_weight="10"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft = "10dp"
+         />
+    <RelativeLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="fill_parent"
+
+        android:layout_height="wrap_content"
+        android:layout_weight="5"
+        android:layout_toRightOf="@+id/productImage"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true">
+        <TextView
+            android:id="@+id/product_name"
+            android:layout_width="210dp"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:text="Product Name"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="?android:attr/textColorPrimary"
+            android:textSize="25dp" />
+
+        <TextView
+            android:id="@+id/product_mrp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/product_name"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:text="Number of Sellers:"
+            android:textColor="?android:attr/textColorPrimary"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/product_mrpvalue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/product_mrp"
+            android:layout_below="@+id/product_name"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:text=" 100"
+            android:textColor="?android:attr/textColorPrimary"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/product_bb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/product_mrp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:text="Lowest Price:"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="?android:attr/textColorPrimary"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/product_bbvalue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/product_bb"
+            android:layout_below="@+id/product_mrp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:text="$1"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="?android:attr/textColorPrimary"
+            android:textSize="15dp" />
+        <TextView
+            android:id="@+id/product_original"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/product_bb"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:text="Original Price:"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="?android:attr/textColorPrimary"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/product_originalvalue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/product_original"
+            android:layout_below="@+id/product_bb"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:text="$2"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="?android:attr/textColorPrimary"
+            android:textSize="15dp" />
+
+    
+    </RelativeLayout>
+</LinearLayout>
